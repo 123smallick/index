@@ -1,0 +1,115 @@
+<!-- Index -->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<!-- Head -->
+<meta http-equiv="content-type" content="text/html;charset=utf-8" />
+<head id="top">
+    <meta charset="UTF-8">
+    <title>The Boys</title>
+
+
+    <!-- Viewport -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- CSS Links -->
+    <link rel="stylesheet" href="css/style.css" type="text/css">
+    <link rel="stylesheet" href="css/hover-min.css">
+
+    <!-- Javascript -->
+    <script src="js/jquery-3.4.1.min.js"></script>
+    <script>
+        /* Scroll button appears on scroll */
+        $(window).scroll(function(){
+          if ($(this).scrollTop() > 20) {
+              $('.scroll-to-top').removeClass('no-display');
+          } else {
+              $('.scroll-to-top').addClass('no-display');
+          }
+        });
+
+        /* Smooth Scrolling */
+        $(document).ready(function(){
+          $("a").on('click', function(event) {
+            if (this.hash !== "") {
+                event.preventDefault();
+                var hash = this.hash;
+                $('html, body').animate({
+                    scrollTop: $(hash).offset().top
+                }, 500, function(){
+                    window.location.hash = hash;
+                });
+            }
+          });
+        });
+    </script>
+
+    <!-- Webpage Icons -->
+    <link rel="icon" type="image/x-icon" href="pm-favicon.ico"/>
+    <link rel="icon" type="image/png" href="zk-logo.html"/> 
+	
+
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-89012104-2"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'UA-89012104-2');
+    </script>
+
+    <!-- Twitter Preview -->
+    <meta name="twitter:card" content="summary_large_image"/>
+    <meta name="twitter:site" content="@PratyushMalli10"/>
+    <meta name="twitter:creator" content="@PratyushMalli10"/>
+    <meta name="twitter:title" content="The Boys" />
+    <meta name="twitter:description" content="The Boys is a web designer from Dallas, Texas."/>
+</head>
+
+<body class="grid">
+    <!-- Header -->
+    <header class="c12">
+        <!-- Nav -->
+        <div class="hero">
+            <div class="header">
+                <a href="index.html"><img alt="Mallick logo" src="pm-logo.svg" class="zk-logo"></a>
+                <h3 class="medium content-web">The Boys</h3>
+                <nav class="nav">
+                    <h5 class="option selected">Modern Presidents</h5>
+                    
+                </nav>
+            </div>
+
+            <!-- Title -->
+            <div class="title">
+                <h1 class="content-web emoji">🖋️</h1>
+                <div>
+                    <h1 class="content-mobile">🖋️</h1>
+                    <h1>Barrack Obama.</h1>
+                    <h1 class="medium"><a>Breaking Barriers. Creating Hope </a> <span style="font-size: 24px">(flexing on the haters)</span>.</h1>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <main class="c12 content">
+
+            <!-- GitHub -->
+            <a href="obama.html"><div class="hvr-float exp exp-github">
+                <div class="exp-content">
+                    <img alt="GitHub logo" src="work/github/github-logo.svg" class="github-logo">
+                    <h2 class="white">Barrack Obama</h2>
+                    <h5 class="medium white">2008-2016</h5>
+                </div>
+            </div></a>
+
+            
+
+        </main>
+
+    
+</body>
+
+</html>
